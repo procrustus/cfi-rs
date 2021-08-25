@@ -1,0 +1,20 @@
+[package]
+name = "cfi"
+version = "0.1.0"
+description = "Support for creating, validating and describing CFI codes"
+authors = ["Marcus Flodin <procrustus@protonmail.com>"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+keywords = ["cfi", "identifier", "finance", "equity", "stock", "iso10962"]
+readme = "README.md"
+repository = "https://github.com/procrustus/cfi-rs.git"
+include = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["describe"]
+# describe enables describing the CFI code in plain text. 
+describe = []
+
+[dependencies]

@@ -9,7 +9,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-cfi = "0.1"
+cfi = { version = "0.1", git = "https://github.com/procrustus/cfi-rs" }
 ```
 
 

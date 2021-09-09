@@ -82,7 +82,7 @@
 //! 
 //! ```toml
 //! [dependencies]
-//! cfi = "0.1"
+//! cfi = { version = "0.1", git = "https://github.com/procrustus/cfi-rs" }
 //! ```
 //! 
 //! ### Example
@@ -109,7 +109,11 @@
 //! 
 //! ```toml
 //! [dependencies]
-//! cfi = { version = "0.1", feature = ["describe"] }
+//! cfi = { 
+//!   version = "0.1", 
+//!   git = "https://github.com/procrustus/cfi-rs", 
+//!   feature = ["describe"] 
+//! }
 //! ```
 //! 
 //! ### Example (with `describe` feature)
@@ -481,11 +485,4 @@ mod tests {
 
     // NOTE: CFIError::InvalidAttributeIndex should not be accessible by users,
     // thus not tested.
-
-    // #[test]
-    // fn ascii() {
-    //     for c in 0..u8::MAX {
-    //         println!("{:?}", (c, c & 128 > 0));
-    //     }
-    // }
 }
